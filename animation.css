@@ -1,0 +1,238 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    height: 500px;
+    width: 100%;
+    background-image: linear-gradient(#3800e7, #8815f1);
+}
+.circle1{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-image: linear-gradient(#8815f1, #3800e7);
+    position: absolute;
+    top: -200px;
+    left: -200px;
+    animation: move1 8s infinite ease-in-out;
+    z-index: 5;
+}
+@keyframes move1{
+    0%{top: -200px; left: -200px;}
+    50%{top: 100px; left: 100px;}
+    100%{top: -200px; left: -200px}
+
+}
+.circle2{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-image: linear-gradient(#15e0ff, #3800e7);
+    position: absolute;
+    top: -200px;
+    right: -200px;
+    float: left;
+    animation: move2 12s infinite ease-in-out;
+    z-index: 3;
+}
+@keyframes move2{
+    0%{top: -200px; right: -200px;}
+    50%{top: 100px; right: 100px;}
+    100%{top: -200px; right: -200px}
+}
+.circle3{
+    height: 700px;
+    width: 700px;
+    border-radius: 50%;
+    background-image: linear-gradient(#1815f1, #15e0ff);
+    position: absolute;
+    top: -300px;
+    left: 320px;
+    z-index: 1;
+    animation: move3 20s linear infinite;
+}
+@keyframes move3{
+    0%{top: -300px; left: 320px;}
+    50%{top: -200px; left: 320px;}
+    100%{top: -300px; left: 320px;}
+
+}
+.circle4{
+    height: 800px;
+    width: 800px;
+    border-radius: 50%;
+    border-style: dashed;
+    border-color: white;
+    border-width: 5px;
+    position: absolute;
+    z-index: 6;
+    top: 250px;
+    animation: rotation 30s ease-in-out alternate infinite;
+}
+@keyframes rotation{
+    from{ transform: rotate(0deg);}
+    to{ transform: rotate(360deg);}
+}
+
+.small1{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border-style: solid;
+    position: absolute;
+    border-color: white;
+    border-width: 5px;
+    left: 400px;
+    z-index: 7;
+    top: 100px;
+    animation: small1 8s ease-in-out infinite;
+}
+@keyframes small1{
+    0%{top: 100px; left: 400px;}
+    50%{top: 200px; left: 400px;}
+    100%{top: 100px; left: 400px;}
+}
+.small2{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border-style: solid;
+    position: absolute;
+    border-color: white;
+    border-width: 5px;
+    top: 200px;
+    left: 400px;
+    z-index: 7;
+}
+
+.small3{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border-style: solid;
+    position: absolute;
+    z-index: 7;
+    border-color: white;
+    border-width: 5px;
+    top: 200px;
+    left: 400px;
+    animation: small3 8s ease-in-out infinite;
+}
+@keyframes small3{
+    0%{top: 300px; left: 400px;}
+    50%{top: 200px; left: 400px;}
+    100%{top: 300px; left: 400px;}
+}
+
+.small4{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border-style: solid;
+    position: absolute;
+    border-color: white;
+    border-width: 5px;
+    right: 300px;
+    z-index: 7;
+    top: 200px;
+    animation: small4 12s ease-in-out infinite;
+}
+@keyframes small4{
+    0%{top: 200px; right: 400px;}
+    50%{top: 200px; right: 300px;}
+    100%{top: 200px; right: 400px;}
+}
+
+.small5{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border-style: solid;
+    position: absolute;
+    border-color: white;
+    border-width: 5px;
+    top: 200px;
+    right: 300px;
+    z-index: 7;
+}
+
+.small6{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border-style: solid;
+    position: absolute;
+    z-index: 7;
+    border-color: white;
+    border-width: 5px;
+    top: 200px;
+    right: 400px;
+    animation: small6 12s ease-in-out infinite;
+}
+@keyframes small6{
+    0%{top: 200px; right: 200px;}
+    50%{top: 200px; right: 300px;}
+    100%{top: 200px; right: 200px;}
+}
+
+.stick1{
+    height: 200px;
+    width: 3px;
+    background-color: azure;
+    position: absolute;
+    left: 418px;
+    top: -130px;
+    z-index: 7;
+    animation: stick1 8s linear infinite;
+}
+@keyframes stick1{
+    0%{top: -130px;}
+    50%{top: -10px;}
+}
+
+.stick2{
+    height: 300px;
+    width: 3px;
+    background-color: azure;
+    position: absolute;
+    left: 418px;
+    top: 370px;
+    z-index: 7;
+    animation: stick2 8s linear infinite;
+}
+@keyframes stick2{
+    0%{top: 370px;}
+    50%{top: 250px;}
+
+}
+
+.stick3{
+    height: 4px;
+    width: 1000px;
+    background-color: azure;
+    position: absolute;
+    left: -200px;
+    top: 215px;
+    z-index: 3;
+    animation: stick3 12s linear infinite;
+}
+@keyframes stick3{
+    0%{transform: translateX(0px);}
+    50%{transform: translate(100px);}
+}
+.stick4{
+    height: 4px;
+    width: 300px;
+    background-color: azure;
+    position: absolute;
+    right: -130px;
+    top: 215px;
+    z-index: 4;
+    animation: stick4 12s linear infinite;
+}
+@keyframes stick4{
+    0%{transform: translateX(0px);}
+    50%{transform: translate(-100px);}
+}
